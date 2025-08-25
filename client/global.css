@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+                  /**
+   * Tea Time Light Pink & Pastel Green Theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    /* Light pink and green background scheme */
+    --background: 330 40% 98%;
+    --foreground: 220 15% 20%;
+
+    --card: 330 30% 99%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 330 30% 99%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Primary light pink theme */
+    --primary: 330 60% 70%;
+    --primary-foreground: 330 30% 99%;
+
+    --secondary: 140 30% 92%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 220 10% 94%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 140 40% 88%;
+    --accent-foreground: 220 15% 20%;
+
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 330 30% 99%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 330 60% 70%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 330 25% 96%;
+    --sidebar-foreground: 220 15% 20%;
+    --sidebar-primary: 330 60% 70%;
+    --sidebar-primary-foreground: 330 30% 99%;
+    --sidebar-accent: 140 25% 90%;
+    --sidebar-accent-foreground: 220 15% 20%;
+    --sidebar-border: 220 15% 88%;
+    --sidebar-ring: 330 60% 70%;
+
+    /* Tea Time light pink and pastel green palette */
+    --tea-pink-50: 330 100% 98%;
+    --tea-pink-100: 330 80% 95%;
+    --tea-pink-200: 330 70% 90%;
+    --tea-pink-300: 330 60% 82%;
+    --tea-pink-400: 330 65% 75%;
+    --tea-pink-500: 330 60% 70%;
+    --tea-pink-600: 330 55% 60%;
+    --tea-pink-700: 330 50% 50%;
+    --tea-pink-800: 330 45% 40%;
+
+    --tea-green-50: 140 60% 98%;
+    --tea-green-100: 140 55% 95%;
+    --tea-green-200: 140 50% 88%;
+    --tea-green-300: 140 45% 78%;
+    --tea-green-400: 140 50% 68%;
+    --tea-green-500: 140 55% 58%;
+    --tea-green-600: 140 60% 48%;
+    --tea-green-700: 140 65% 38%;
+    --tea-green-800: 140 70% 28%;
+
+    --tea-mint-50: 160 70% 98%;
+    --tea-mint-100: 160 65% 95%;
+    --tea-mint-200: 160 60% 88%;
+    --tea-mint-300: 160 55% 78%;
+    --tea-mint-400: 160 60% 68%;
+    --tea-mint-500: 160 65% 58%;
+    --tea-mint-600: 160 70% 48%;
+    --tea-mint-700: 160 75% 38%;
+    --tea-mint-800: 160 80% 28%;
+
+    --tea-neutral-50: 220 15% 98%;
+    --tea-neutral-100: 220 12% 95%;
+    --tea-neutral-200: 220 10% 88%;
+    --tea-neutral-300: 220 8% 75%;
+    --tea-neutral-400: 220 6% 60%;
+    --tea-neutral-500: 220 5% 45%;
+    --tea-neutral-600: 220 6% 35%;
+    --tea-neutral-700: 220 8% 25%;
+    --tea-neutral-800: 220 10% 18%;
+
+    --tea-chaos-red: 0 75% 65%;
+    --tea-chaos-green: 120 55% 60%;
+  }
+
+              .dark {
+    /* Dark mode with modern blue accents */
+    --background: 220 15% 8%;
+    --foreground: 220 20% 92%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 220 20% 92%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 220 20% 92%;
+
+    --primary: 200 80% 65%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 12% 15%;
+    --secondary-foreground: 220 20% 92%;
+
+    --muted: 220 12% 15%;
+    --muted-foreground: 220 8% 70%;
+
+    --accent: 180 50% 25%;
+    --accent-foreground: 220 20% 92%;
+
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 220 20% 92%;
+
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 200 80% 65%;
+
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 220 20% 90%;
+    --sidebar-primary: 200 80% 65%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 12% 12%;
+    --sidebar-accent-foreground: 220 20% 90%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 200 80% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
